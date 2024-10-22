@@ -16,9 +16,6 @@ This repository contains the implementation of the paper *"Generating Multiple H
 .
 ├── data/                 # Directory containing the dataset (.npz files)
 ├── src/                  # Source codes for training, testing, and analysis
-│   ├── train.py          # Script for training the model
-│   ├── test.py           # Script for testing the model
-│   ├── analysis.py       # Script for analyzing results
 ├── requirements.txt      # List of dependencies
 ├── README.md             # This readme file
 ├── report.pdf            # PDF containing implementation details and results
