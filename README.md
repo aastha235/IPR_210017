@@ -9,9 +9,6 @@ This repository contains the implementation of the paper *"Generating Multiple H
 - [Dataset](#dataset)
 - [Training the Model](#training-the-model)
 - [Testing the Model](#testing-the-model)
-- [Results](#results)
-- [PDF Report](#pdf-report)
-- [Contact Information](#contact-information)
 
 ## Project Structure
 
