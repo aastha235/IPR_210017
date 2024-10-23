@@ -29,18 +29,38 @@ Link to the paper on [arXiv](https://arxiv.org/pdf/1904.05547.pdf).
 ├── requirements.txt      # List of dependencies
 ├── README.md             # This readme file
 ├── report.pdf            # PDF containing implementation details and results
-
-
-**Dependencies**
-1. h5py--to read data
-2. Tensorflow 1.8
-
-**Train**
-
-Get this code:
 ```
-git clone https://github.com/chaneyddtt/Generating-Multiple-Hypotheses-for-3D-Human-Pose-Estimation-with-Mixture-Density-Network.git 
+
+**Install dependencies**
+Clone this repository:
 ```
+git clone https://github.com/aastha235/IPR_210017.git
+```
+
+Install the dependencies:
+```
+pip install -r requirements.txt
+```
+**Training for MPI-INF-3DHP dataset**
+Dowaload the dataset from the link: https://drive.google.com/drive/folders/1t0fNyshvz_ypYo2XJ_kcWdP-mipII_zv?usp=sharing
+
+Unzip the compressed dataset using the command:
+```
+unzip mpi-inf-3dhp.zip
+```
+
+Run preprocessing.py for preprocessing the dataset (Provide appropriate path to the dataset folder):
+```
+python preprocessing.py
+```
+This generates a combined ```.npz``` file for the dataset.
+
+Run the notebook with appropriate paths: ```train.ipynb```
+It contains code for extracting 3D and 2D data from the .npz file and training the data on a Mixture Density Network.
+
+
+
+**Training for Human3.6 dataset**
 Download the 2D detections of [Human3.6 dataset](https://github.com/una-dinosauria/3d-pose-baseline).
 
 Run:
@@ -55,7 +75,7 @@ You can also change other arguments in the predict_3dpose_mdm.py in a similar wa
 
  **Test**
 
-Down the pretrained model (https://drive.google.com/open?id=1ndJyuVL-7fbhw-G654m5U8tHogcQIftT)
+Download the pretrained model (https://drive.google.com/open?id=1ndJyuVL-7fbhw-G654m5U8tHogcQIftT)
  
 To test a pretrained model, run:
 ```
